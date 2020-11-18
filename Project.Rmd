@@ -1,0 +1,25 @@
+---
+title: "PSet4"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r libraries}
+library(foreign)
+library(tidyr)
+library(tibble)
+library(dplyr)
+library(ggplot2)
+library(ggthemes)
+```
+
+
+## Data
+```{r import data}
+survey <- read.spss("Jan20-public/Jan20 public.sav", to.data.frame = TRUE)
+str(survey)
+```
+
